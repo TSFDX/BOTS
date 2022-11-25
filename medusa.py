@@ -58,12 +58,6 @@ async def start_cmd(_, msg: Message):
     ''' Response for /start command (private or groupe) '''
 
         await msg.reply(
-            text=PMTEXT,
-            reply_markup=PMKEYBOARD,
-            disable_web_page_preview=True
-        )
-    else:
-        await msg.reply(
             text='Hey! I am Online. PM me if you have any question on how to use me.',
             reply_markup=InlineKeyboardMarkup(
                 [
